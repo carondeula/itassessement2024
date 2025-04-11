@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+       <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+	<li><a href="table.html">My Favorite Animals</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Info</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; margin-top:20px;">Gallery</h1>
+    <section class="gallery">
+	<a href="images/project4_large.jpg" target="_blank">
+        <img src="images/project4_thumb.jpeg" alt="Project 4 Thumbnail" />
+      </a>
+      <a href="images/project1_large.jpg" target="_blank">
+        <img src="images/project1_thumb.jpeg" alt="Project 1 Thumbnail" />
+      </a>
+     
+      <a href="images/project3_large.jpeg" target="_blank">
+        <img src="images/project3_thumb.jpg" alt="Project 3 Thumbnail" />
+      </a>
+ 	<a href="images/project2_large.jpg" target="_blank">
+        <img src="images/project2_thumb.jpeg" alt="Project 2 Thumbnail" />
+      </a>
+      
+    </section>
+  </main>
+
+  <footer>
+ <p>Animal & Nature Lover Portfolio | Caron Deula | carondeula2@gmail.com </p>
+    <p>© 2025 All Rights Reserved</p>
+  </footer>
+</body>
+</html>
